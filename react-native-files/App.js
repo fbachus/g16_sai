@@ -8,10 +8,11 @@ import Review from  './components/Review/review.js';
 const RootStack = createStackNavigator(
   {
     Review: Review,
+    Inbox: Inbox,
     
   },
   {
-    initialRouteName: 'Review',
+    initialRouteName: 'Inbox',
   }
 );
 

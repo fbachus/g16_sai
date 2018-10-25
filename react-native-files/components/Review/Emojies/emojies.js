@@ -11,17 +11,20 @@ render() {
       
     return (
 
-    <ScrollView style={styles.container}>
-                <TouchableOpacity style={styles.t_dots}
+    <View style={styles.container}>
+
+                <TouchableOpacity 
                     onPress={() => this.props.navigation.push('Review')}>
-                        <Image style={styles.dots} source={require("/Users/christopherroskes/Desktop/dieErsteFunktionierendeApp/assets/Curious-Emojie.png")}/>
+                        <Image style={styles.curious} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native-files/assets/Curious-Emojie.png")}/>
                 </TouchableOpacity>
 
-                 <TouchableOpacity style={styles.t_dots}
+                <TouchableOpacity 
                     onPress={() => this.props.navigation.push('Review')}>
-                        <Image style={styles.dots} source={require("/Users/christopherroskes/Desktop/dieErsteFunktionierendeApp/assets/TutoBene-Emojie.png")}/>
+                        <Image style={styles.tutobene} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native-files/assets/TutoBene-Emojie.png")}/>
                 </TouchableOpacity>
-    </ScrollView>
+
+                 
+    </View>
     )
   }
 
@@ -32,7 +35,21 @@ const styles = StyleSheet.create({
 
     container: {
         backgroundColor: 'white',
-        flex:1,
+        flex:0.4,
     },
+
+    curious: {
+        height: 80,
+        width: 80,
+        left: 104,
+    },
+
+    tutobene: {
+        height: 80,
+        width: 80,
+        left: 208,
+        bottom: 78,
+        
+    }
     
 });

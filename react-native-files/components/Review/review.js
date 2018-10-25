@@ -1,28 +1,31 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, Image, View , ScrollView, TouchableOpacity , Alert, px} from 'react-native';
-import Navbar from '../Navbar/navbar';
-import Emojies from '../Emojies/emojies'
+import Navbarreview from '../Navbar/navbar-review';
+import Emojies from '../Review/Emojies/emojies';
 import { createStackNavigator } from 'react-navigation';
+
 
 
 export default class Review extends React.Component {
     static navigationOptions = {
         header: null
     }
+    
+    
 render() {
       
     return (
 
+        <View style={styles.ocontainer}>
+
+        <Navbarreview/>
     <ScrollView style={styles.container}>
 
-        <Navbar/>
-       <View >
-            <Text style={styles.reviewText}>
-                Review
-            </Text>
         
+       <View >
            <View style={styles.box}>
                 
+                <View>
                 <Text style={styles.situation}>
                     SITUATION
                 </Text>
@@ -46,14 +49,19 @@ render() {
                 <Text style={styles.impactInput}>
                     During yesterday morning`s team meating, when you gave your presentation...
                 </Text>
+                </View>
 
            </View>
 
-            <Emojies/>
+            
             
        </View>
 
     </ScrollView>
+
+    <Emojies/>
+
+    </View>
     )
   }
 
@@ -62,18 +70,15 @@ render() {
 
 const styles = StyleSheet.create({
 
+    ocontainer: {
+        flex:10,
+    },
+
     container: {
+        flex: 5,
         backgroundColor: 'white',
-        flex:1,
     },
 
-    reviewText: {
-        fontFamily: "Avenir Next",
-        fontSize: 24,
-        left: 32,
-        top: 10,
-
-    },
 
     box: {
         margin: 27,
@@ -83,11 +88,12 @@ const styles = StyleSheet.create({
         borderColor: 'white',
         shadowColor: '#DADADA',
         shadowOffset: {
-        width: 0,
-        height: 3
+            width: 0,
+            height: 3
         },
         shadowRadius: 5,
-        shadowOpacity: 1.0
+        shadowOpacity: 1.0,
+        flex: 1,
     },
 
 
@@ -97,17 +103,20 @@ const styles = StyleSheet.create({
         fontFamily: "Avenir Next",
         fontSize: 12,
         letterSpacing: 1.5,
-        left: 52,
-        top: 156,
+        left: 24,
+        paddingTop: 20,
+        paddingBottom: 10,
+        
 
     },
 
     action: {
         fontFamily: "Avenir Next",
         fontSize: 12,
-        left: 52,
-        top: 263,
         letterSpacing: 1.5,
+        left: 24,
+        paddingTop: 20,
+        paddingBottom: 10,
 
     },
 
@@ -115,9 +124,10 @@ const styles = StyleSheet.create({
         fontFamily: "Avenir Next",
         fontSize: 12,
         letterSpacing: 0.12,
-        left: 52,
-        top: 370,
         letterSpacing: 1.5,
+        left: 24,
+        paddingTop: 20,
+        paddingBottom: 10,
 
     },
 
@@ -127,25 +137,31 @@ const styles = StyleSheet.create({
     situationInput: {
         fontFamily: "Avenir Next",
         fontSize: 14,
-        left: 52,
-        top: 181,
-        width: 272,
+        width: 200,
+        left: 24,
+        paddingTop: 5,
+        paddingBottom: 10,
+        fontWeight: 'bold',
     },
 
     actionInput: {
         fontFamily: "Avenir Next",
         fontSize: 14,
-        left: 52,
-        top: 288,
-        width: 272,
+        width: 200,
+        left: 24,
+        paddingTop: 5,
+        paddingBottom: 10,
+        fontWeight: 'bold',
     },
 
     impactInput: {
         fontFamily: "Avenir Next",
         fontSize: 14,
-        left: 52,
-        top: 395,
-        width: 272,
+        width: 200,
+        left: 24,
+        paddingTop: 5,
+        paddingBottom: 20,
+        fontWeight: 'bold',
     },
     
 });
