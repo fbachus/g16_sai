@@ -1,7 +1,12 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, Image, View , ScrollView, TouchableOpacity , Alert, px} from 'react-native';
 import Navbarinbox from '../Navbar/navbar-inbox';
+import InboxAllLines from './inbox-allLines';
+
 import { createStackNavigator } from 'react-navigation';
+
+
+
 
 
 
@@ -18,11 +23,33 @@ render() {
         <View style={styles.ocontainer}>
 
         <Navbarinbox/>
-            <ScrollView style={styles.container}>
-                Halts Maul
-                
 
-            </ScrollView>
+        <ScrollView style={styles.container}>
+        <TouchableOpacity>
+            <InboxAllLines/>
+        </TouchableOpacity>  
+
+        <TouchableOpacity>
+            <InboxAllLines/>
+        </TouchableOpacity>  
+
+        <TouchableOpacity>
+            <InboxAllLines/>
+        </TouchableOpacity>  
+
+        <TouchableOpacity>
+            <InboxAllLines/>
+        </TouchableOpacity>  
+
+        <TouchableOpacity>
+            <InboxAllLines/>
+        </TouchableOpacity>  
+
+        <TouchableOpacity>
+            <InboxAllLines/>
+        </TouchableOpacity>  
+            
+        </ScrollView>
 
     </View>
     )
@@ -34,14 +61,16 @@ render() {
 const styles = StyleSheet.create({
 
     ocontainer: {
-        flex:10,
+        flex:1,
+        
+        
     },
 
     container: {
-        flex: 5,
+        flex: 1,
         backgroundColor: 'white',
+        flexDirection: 'row',
     },
-
     
 });
 

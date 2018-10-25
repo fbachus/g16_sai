@@ -61,21 +61,21 @@ const styles = StyleSheet.create({
     dots: {
         height: 32,
         width: 32,
-        left: 140,
+        left: 120,
         top: 30,
     },
 
     basket: {
         height: 32,
         width: 32,
-        left: 160,
+        left: 140,
         top: 30,
     },
 
     crossButton: {
         height: 32,
         width: 32,
-        left: 180,
+        left: 160,
         top: 30,
     }
     

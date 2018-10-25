@@ -4,15 +4,17 @@ import { createStackNavigator } from 'react-navigation';
 
 import Inbox from './components/Inbox/inbox.js';
 import Review from  './components/Review/review.js';
+import Feedback from './components/Feedback/feedback.js';
 
 const RootStack = createStackNavigator(
   {
     Review: Review,
     Inbox: Inbox,
+    Feedback: Feedback,
     
   },
   {
-    initialRouteName: 'Inbox',
+    initialRouteName: 'Feedback',
   }
 );
 
