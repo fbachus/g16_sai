@@ -6,6 +6,14 @@ import Welcome from './components/Welcome/welcome.js';
 import Inbox from './components/Inbox/inbox.js';
 import Review from  './components/Review/review.js';
 import Feedback from './components/Feedback/feedback.js';
+import SignLogInMenu from './components/LogSign-In/menu-signlog-in';
+import SignUpEmail from './components/LogSign-In/signin-email';
+import SignUpPassword from './components/LogSign-In/signin-password';
+import SignUpName from './components/LogSign-In/signin-name';
+import Login from './components/LogSign-In/login';
+import Give from './components/Give/give';
+import Request from './components/Request/request';
+
 
 const RootStack = createStackNavigator(
   {
@@ -14,10 +22,17 @@ const RootStack = createStackNavigator(
     Review: Review,
     Inbox: Inbox,
     Feedback: Feedback,
-    
+    SignLogInMenu: SignLogInMenu,
+    SignUpEmail: SignUpEmail,
+    SignUpPassword: SignUpPassword,
+    SignUpName: SignUpName,
+    Login: Login,
+    Give: Give,
+    Request: Request,    
   },
+
   {
-    initialRouteName: 'Welcome',
+    initialRouteName: 'Give',
   }
 );
 

@@ -31,21 +31,21 @@ render() {
                 </Text>
             </View>
 
-        <View style={styles.description}>
-            <View>
-                <Image style={styles.w1} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native-files/assets/Welcome1.png")}/>
+            <View style={styles.images}>
+                <View>
+                    <Image style={styles.image1} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native-files/assets/Welcome1.png")}/>
+                </View>
+
+                <View>
+                     <Image style={styles.image2} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native-files/assets/Welcome2.png")}/>
+                </View>
+
+                <View>
+                     <Image style={styles.image3} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native-files/assets/Welocome3.png")}/> 
+                </View>
             </View>
 
-            <View>
-                <Image style={styles.w1} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native-files/assets/Welcome2.png")}/>
-            </View>
-
-            <View>
-                <Image style={styles.w1} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native-files/assets/Welcome3.png")}/>
-            </View>
-        </View>
-
-            <TouchableOpacity style={styles.continueContainer}>
+            <TouchableOpacity style={styles.continueContainer} onPress={() => this.props.navigation.navigate()}>
                 <Text style={styles.continue}>
                     continue
                 </Text>
@@ -88,30 +88,9 @@ const styles = StyleSheet.create({
         fontFamily: 'Avenir Next',
         fontSize: 17,
         width: 287,
-        top: 20,
+        top: 10,
         textAlign: 'center',
         left: 40
-    },
-
-    w1: {
-        height: 60,
-        width: 60,
-        left: 43,
-        marginTop: 42,
-        
-    },
-
-    w2: {
-        height: 60,
-        width: 60,
-        left: 43,
-    },
-
-    w3: {
-        height: 60,
-        width: 60,
-        left: 43,
-       
     },
 
     continueContainer: {
@@ -122,7 +101,7 @@ const styles = StyleSheet.create({
         width: 320,
         backgroundColor: '#F2994A',
         borderColor: '#F2994A',
-        marginTop: 60,
+        top: 200,
         left: 28
     },
 
@@ -135,6 +114,29 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         letterSpacing: 1.3
 
+    },
+
+   
+
+    image1: {
+        width: 250,
+        height: 70,
+        top: 50,
+        left: 52,
+    },
+
+    image2: {
+        width: 250,
+        height: 50,
+        top: 80,
+        left: 48,
+    },
+
+    image3: {
+        width: 250,
+        height: 50,
+        top: 110,
+        left: 50,
     },
    
 
