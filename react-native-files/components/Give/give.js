@@ -13,10 +13,14 @@ export default class Give extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { name: 'Try: John Doe',
-                situ: 'What was the sitaution?',
-                action: 'What was the action?',
-                impa: 'What impact had it?',
+        this.state = { name: '',
+                situ: '',
+                action: '',
+                impa: '',
+                klasse: styles.inputBoxToWhom,
+                klasseS: styles.inputBoxsitu,
+                klasseA: styles.inputBoxactio,
+                klasseI: styles.inputBoxImpact,
     };
       }
     
@@ -36,9 +40,10 @@ render() {
                 <Text style={styles.towhom}>TO WHOM</Text>
 
                 <TextInput
-                alignItems={ 'stretch'}
-                style={styles.inputBoxToWhom}
+                placeholder='Try: John Doe'
+                style={this.state.klasse}
                 onChangeText={(name) => this.setState({name})}
+                onChange={(klasse) => this.setState({klasse: styles.inputBoxToWhomChange})}
                 value={this.state.name} 
                 />
 
@@ -47,8 +52,10 @@ render() {
                 <Text style={styles.situ}>SITUATION</Text>
 
                 <TextInput
-                style={styles.inputBoxsitu}
+                placeholder='What was the sitaution?'
+                style={this.state.klasseS}
                 onChangeText={(situ) => this.setState({situ})}
+                onChange={(klasseS) => this.setState({klasseS: styles.inputBoxsituChange})}
                 value={this.state.situ} 
                 />
 
@@ -57,9 +64,10 @@ render() {
                 <Text style={styles.acti}>ACTION</Text>
 
                 <TextInput
-                containerViewStyle={{width: '100%', marginLeft: 0}}
-                style={styles.inputBoxactio}
+                placeholder='What was the action?'
+                style={this.state.klasseA}
                 onChangeText={(action) => this.setState({action})}
+                onChange={(klasseA) => this.setState({klasseA: styles.inputBoxactioChange})}
                 value={this.state.action} 
                 />
 
@@ -68,8 +76,10 @@ render() {
                 <Text style={styles.impact}>IMPACT</Text>
 
                 <TextInput
-                style={styles.inputBoxImpact}
+                placeholder='What impact had it?'
+                style={this.state.klasseI}
                 onChangeText={(impa) => this.setState({impa})}
+                onChange={(klasseI) => this.setState({klasseI: styles.inputBoxImpactChange})}
                 value={this.state.impa} 
                 />
               
@@ -190,6 +200,94 @@ const styles = StyleSheet.create({
         fontFamily: 'Avenir Next',
     },
 
+
+    inputBoxToWhomChange: {
+        color: '#333333',
+        height:44,
+        width: 290,
+        backgroundColor: 'white',
+        borderRadius: 6,
+        borderWidth: 2,
+        borderColor: '#007AFF',
+        left: 32,
+        top: 20,
+        padding: 10,
+        fontWeight: '600',
+        fontFamily: 'Avenir Next',
+        flex: 1,
+        shadowColor: '#DADADA',
+        shadowOffset: {
+            width: 0,
+            height: 3
+        },
+        shadowRadius: 5,
+        shadowOpacity: 1.0,
+    },
+
+    inputBoxactioChange: {
+        color: '#333333',
+        height:82,
+        width: 290,
+        backgroundColor: 'white',
+        borderRadius: 6,
+        borderWidth: 2,
+        borderColor: '#007AFF',
+        fontWeight: '600',
+        left: 32,
+        top: 110,
+        padding: 10,
+        fontFamily: 'Avenir Next',
+        shadowColor: '#DADADA',
+        shadowOffset: {
+            width: 0,
+            height: 3
+        },
+        shadowRadius: 5,
+        shadowOpacity: 1.0,
+    },
+
+    inputBoxsituChange: {
+        color: '#333333',
+        height:82,
+        width: 290,
+        backgroundColor: 'white',
+        borderRadius: 6,
+        borderWidth: 2,
+        borderColor: '#007AFF',
+        left: 32,
+        top: 55,
+        padding: 10,
+        fontWeight: '600',
+        fontFamily: 'Avenir Next',
+        shadowColor: '#DADADA',
+        shadowOffset: {
+            width: 0,
+            height: 3
+        },
+        shadowRadius: 5,
+        shadowOpacity: 1.0,
+    },
+    inputBoxImpactChange: {
+        color: '#333333',
+        height:82,
+        width: 290,
+        backgroundColor: 'white',
+        borderRadius: 6,
+        borderWidth: 2,
+        borderColor: '#007AFF',
+        left: 32,
+        top: 155,
+        padding: 10,
+        fontWeight: '600',
+        fontFamily: 'Avenir Next',
+        shadowColor: '#DADADA',
+        shadowOffset: {
+            width: 0,
+            height: 3
+        },
+        shadowRadius: 5,
+        shadowOpacity: 1.0,
+    },
 
 
 

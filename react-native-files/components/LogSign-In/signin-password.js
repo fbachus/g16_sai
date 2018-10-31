@@ -11,7 +11,10 @@ export default class SignInPassword extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { text: '' };
+        this.state = { 
+            text: '', 
+            klasse: styles.inputBox,
+        };
       }
 
         GetValueFunction = (ValueHolder) =>{
@@ -36,9 +39,10 @@ render() {
         </Text>
 
             <TextInput
-                style={styles.inputBox}
+                style={this.state.klasse}
                 placeholder="Password"
                 onChangeText={(text) => this.setState({text})}
+                onChange={(klasse) => this.setState({ klasse: styles.inputBoxChange})}
                 value={this.state.text} />
 
         <TouchableOpacity style={styles.button1}>
@@ -111,7 +115,7 @@ const styles = StyleSheet.create({
     button2: {
         width: 375,
         height: 44,
-        top: 265,
+        top: 285,
         borderWidth: 0.5,
         backgroundColor: 'white',
         borderColor: '#999999',
@@ -124,5 +128,25 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         top: 13,
     },
+
+    inputBoxChange: {
+        color: '#333333',
+        height:44,
+        width: 288,
+        backgroundColor: 'white',
+        borderRadius: 6,
+        borderWidth: 2,
+        borderColor: '#007AFF',
+        left: 43,
+        top: 84,
+        textAlign: 'center',
+        shadowColor: '#DADADA',
+        shadowOffset: {
+            width: 0,
+            height: 3
+        },
+        shadowRadius: 5,
+        shadowOpacity: 1.0,
+    }
 
 });

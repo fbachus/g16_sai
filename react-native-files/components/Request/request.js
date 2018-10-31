@@ -14,7 +14,9 @@ export default class Give extends React.Component {
     constructor(props) {
         super(props);
         this.state = { name: '',
-        situ: ''
+                    situ: '',
+                    klasseN: styles.inputBoxToWhom,
+                    klasseS: styles.inputBoxWhatSitu,
      };
       }
     
@@ -35,8 +37,9 @@ render() {
 
                 <TextInput
                 placeholder="Try: John Doe"
-                style={styles.inputBoxToWhom}
+                style={this.state.klasseN}
                 onChangeText={(name) => this.setState({name})}
+                onChange={(klasseN) => this.setState({ klasseN: styles.inputBoxToWhomChange})}
                 value={this.state.name} 
                 />
 
@@ -44,8 +47,9 @@ render() {
 
                 <TextInput
                 placeholder='Describe the situation...'
-                style={styles.inputBoxWhatSitu}
+                style={this.state.klasseS}
                 onChangeText={(situ) => this.setState({situ})}
+                onChange={(klasseS) => this.setState({ klasseS: styles.inputBoxWhatSituChange})}
                 value={this.state.situ} 
                 />
 
@@ -95,6 +99,7 @@ const styles = StyleSheet.create({
         left: 32,
         top: 20,
         padding: 10,
+        fontFamily: 'Avenir Next',
     }, 
 
     whatSitu: {
@@ -113,10 +118,55 @@ const styles = StyleSheet.create({
         borderRadius: 6,
         borderWidth: 0.5,
         borderColor: '#CACACA',
+        fontFamily: 'Avenir Next',
         left: 32,
         top: 55,
         padding: 10,
     }, 
+
+    inputBoxToWhomChange: {
+        color: '#333333',
+        height:44,
+        width: 290,
+        backgroundColor: '#FAFAFA',
+        fontWeight: '600',
+        borderRadius: 6,
+        borderWidth: 2,
+        borderColor: '#007AFF',
+        fontFamily: 'Avenir Next',
+        left: 32,
+        top: 20,
+        padding: 10,
+        shadowColor: '#DADADA',
+        shadowOffset: {
+            width: 0,
+            height: 3
+        },
+        shadowRadius: 5,
+        shadowOpacity: 1.0,
+    },
+
+    inputBoxWhatSituChange: {
+        color: '#333333',
+        height:82,
+        width: 290,
+        fontFamily: 'Avenir Next',
+        fontWeight: '600',
+        backgroundColor: 'white',
+        borderRadius: 6,
+        borderWidth: 2,
+        borderColor: '#007AFF',
+        left: 32,
+        top: 55,
+        padding: 10,
+        shadowColor: '#DADADA',
+        shadowOffset: {
+            width: 0,
+            height: 3
+        },
+        shadowRadius: 5,
+        shadowOpacity: 1.0,
+    },
 
 
 

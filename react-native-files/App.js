@@ -31,7 +31,7 @@ const RootStack = createStackNavigator(
     Give: Give,
     Request: Request, 
     Settings: Settings,   
-    Button: SignUpPassword,
+    
   },
 
   {
