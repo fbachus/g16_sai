@@ -25,29 +25,29 @@ render() {
         <Navbarinbox/>
 
         <ScrollView style={styles.container}>
-        <TouchableOpacity>
-            <InboxAllLines/>
-        </TouchableOpacity>  
+            <TouchableOpacity>
+                <InboxAllLines/>
+            </TouchableOpacity>  
 
-        <TouchableOpacity>
-            <InboxAllLines/>
-        </TouchableOpacity>  
+            <TouchableOpacity>
+                <InboxAllLines/>
+            </TouchableOpacity>  
 
-        <TouchableOpacity>
-            <InboxAllLines/>
-        </TouchableOpacity>  
+            <TouchableOpacity>
+                <InboxAllLines/>
+            </TouchableOpacity>  
 
-        <TouchableOpacity>
-            <InboxAllLines/>
-        </TouchableOpacity>  
+            <TouchableOpacity>
+                <InboxAllLines/>
+            </TouchableOpacity>  
 
-        <TouchableOpacity>
-            <InboxAllLines/>
-        </TouchableOpacity>  
+            <TouchableOpacity>
+                <InboxAllLines/>
+            </TouchableOpacity>  
 
-        <TouchableOpacity>
-            <InboxAllLines/>
-        </TouchableOpacity>  
+            <TouchableOpacity>
+                <InboxAllLines/>
+            </TouchableOpacity>  
             
         </ScrollView>
 

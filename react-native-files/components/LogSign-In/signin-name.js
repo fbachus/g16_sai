@@ -11,7 +11,7 @@ export default class SignInName extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { text: 'Name' };
+        this.state = { text: '' };
       }
     
     
@@ -26,6 +26,7 @@ render() {
         </Text>
 
             <TextInput
+                placeholder="Name"
                 style={styles.inputBox}
                 onChangeText={(text) => this.setState({text})}
                 value={this.state.text} />

@@ -11,7 +11,7 @@ export default class LoginPassword extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { text: 'Password' };
+        this.state = { text: '' };
       }
     
     
@@ -19,9 +19,10 @@ render() {
       
     return (
 
-        <View style={styles.container}>
+        <View style={styles.container1}>
             <TextInput
-                style={styles.inputBox}
+                placeholder='Password'
+                style={styles.inputBox1}
                 onChangeText={(text) => this.setState({text})}
                 value={this.state.text} />                       
         </View>
@@ -33,14 +34,14 @@ render() {
 
 const styles = StyleSheet.create({
 
-    container: {
+    container1: {
         flex: 0.1,
         backgroundColor: 'white',
        
     },
 
 
-    inputBox: {
+    inputBox1: {
         color: '#C4C5CA',
         height:44,
         width: 288,

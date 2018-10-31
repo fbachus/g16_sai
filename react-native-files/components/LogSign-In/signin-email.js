@@ -11,7 +11,7 @@ export default class SignInMail extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { text: 'Email adress' };
+        this.state = { text: '' };
     }
 
     
@@ -37,6 +37,7 @@ render() {
 
             <TextInput
                 style={styles.inputBox}
+                placeholder="E-Mail Adress"
                 onChangeText={(text) => this.setState({text})}
                 onPress={counter++}
                 value={this.state.text} />

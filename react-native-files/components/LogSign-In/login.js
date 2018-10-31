@@ -12,7 +12,7 @@ export default class Login extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { text: 'Mail' };
+        this.state = { text: '' };
       }
     
     
@@ -27,6 +27,7 @@ render() {
         </Text>
 
             <TextInput
+                placeholder="E-Mail"
                 style={styles.inputBox}
                 onChangeText={(text) => this.setState({text})}
                 value={this.state.text} />

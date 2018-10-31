@@ -36,6 +36,7 @@ render() {
                 <Text style={styles.towhom}>TO WHOM</Text>
 
                 <TextInput
+                alignItems={ 'stretch'}
                 style={styles.inputBoxToWhom}
                 onChangeText={(name) => this.setState({name})}
                 value={this.state.name} 
@@ -117,6 +118,8 @@ const styles = StyleSheet.create({
         left: 32,
         top: 20,
         padding: 10,
+        fontFamily: 'Avenir Next',
+        flex: 1,
     }, 
 
     situ: {
@@ -139,6 +142,7 @@ const styles = StyleSheet.create({
         top: 55,
         paddingLeft: 10,
         paddingRight: 10,
+        fontFamily: 'Avenir Next',
     },
 
     acti: {
@@ -160,6 +164,7 @@ const styles = StyleSheet.create({
         left: 32,
         top: 110,
         padding: 10,
+        fontFamily: 'Avenir Next',
     },
 
     impact: {
@@ -181,6 +186,8 @@ const styles = StyleSheet.create({
         left: 32,
         top: 155,
         padding: 10,
+        paddingRight: 10,
+        fontFamily: 'Avenir Next',
     },
 
 

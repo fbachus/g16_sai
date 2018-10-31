@@ -11,8 +11,18 @@ export default class SignInPassword extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { text: 'Password' };
+        this.state = { text: '' };
       }
+
+        GetValueFunction = (ValueHolder) =>{
+            
+            var Value = ValueHolder.length.toString() ;
+        
+            this.setState({ text : Value}) ;
+            
+            }
+
+            
     
     
 render() {
@@ -27,6 +37,7 @@ render() {
 
             <TextInput
                 style={styles.inputBox}
+                placeholder="Password"
                 onChangeText={(text) => this.setState({text})}
                 value={this.state.text} />
 

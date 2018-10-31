@@ -13,8 +13,8 @@ export default class Give extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { name: 'Try: John Doe',
-        situ: 'Describe the situation...'
+        this.state = { name: '',
+        situ: ''
      };
       }
     
@@ -34,6 +34,7 @@ render() {
                 <Text style={styles.towhom}>WHO DO WANT TO RECEIVE FEEDBACK FROM?</Text>
 
                 <TextInput
+                placeholder="Try: John Doe"
                 style={styles.inputBoxToWhom}
                 onChangeText={(name) => this.setState({name})}
                 value={this.state.name} 
@@ -42,6 +43,7 @@ render() {
                 <Text style={styles.whatSitu}>WHAT WAS THE SITUATION?</Text>
 
                 <TextInput
+                placeholder='Describe the situation...'
                 style={styles.inputBoxWhatSitu}
                 onChangeText={(situ) => this.setState({situ})}
                 value={this.state.situ} 
