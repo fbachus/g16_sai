@@ -1,0 +1,2 @@
+class FeedbackAssignment < ApplicationRecord
+end

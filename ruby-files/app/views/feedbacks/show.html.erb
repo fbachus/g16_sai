@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Feedback:</strong>
+  <%= @feedback.feedback_id %>
+</p>
+
+<p>
+  <strong>Situation:</strong>
+  <%= @feedback.situation %>
+</p>
+
+<p>
+  <strong>Action:</strong>
+  <%= @feedback.action %>
+</p>
+
+<p>
+  <strong>Impact:</strong>
+  <%= @feedback.impact_id %>
+</p>
+
+<p>
+  <strong>Anonymous:</strong>
+  <%= @feedback.anonymous %>
+</p>
+
+<%= link_to 'Edit', edit_feedback_path(@feedback) %> |
+<%= link_to 'Back', feedbacks_path %>

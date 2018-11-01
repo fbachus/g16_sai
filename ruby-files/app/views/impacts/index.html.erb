@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Impacts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Impact</th>
+      <th>Feeling</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @impacts.each do |impact| %>
+      <tr>
+        <td><%= impact.impact_id %></td>
+        <td><%= impact.feeling %></td>
+        <td><%= link_to 'Show', impact %></td>
+        <td><%= link_to 'Edit', edit_impact_path(impact) %></td>
+        <td><%= link_to 'Destroy', impact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Impact', new_impact_path %>
