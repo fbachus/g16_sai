@@ -10,17 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_23_200548) do
+ActiveRecord::Schema.define(version: 2018_11_01_143232) do
+
+  create_table "feedback_assignments", force: :cascade do |t|
+    t.integer "feedback_id"
+    t.integer "sender_id"
+    t.integer "receiver_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "feedbacks", force: :cascade do |t|
     t.integer "feedback_id"
-    t.integer "author_id"
-    t.integer "receiver_id"
-    t.boolean "anonymous"
     t.string "situation"
     t.string "action"
     t.integer "impact_id"
-    t.date "date_sent"
+    t.boolean "anonymous"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -34,8 +39,9 @@ ActiveRecord::Schema.define(version: 2018_10_23_200548) do
 
   create_table "users", force: :cascade do |t|
     t.integer "user_id"
-    t.string "password"
-    t.string "name"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "picture_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

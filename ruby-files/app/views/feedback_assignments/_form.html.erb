@@ -1,0 +1,32 @@
+<%= form_with(model: feedback_assignment, local: true) do |form| %>
+  <% if feedback_assignment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(feedback_assignment.errors.count, "error") %> prohibited this feedback_assignment from being saved:</h2>
+
+      <ul>
+      <% feedback_assignment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :feedback_id %>
+    <%= form.number_field :feedback_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sender_id %>
+    <%= form.number_field :sender_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :receiver_id %>
+    <%= form.number_field :receiver_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
