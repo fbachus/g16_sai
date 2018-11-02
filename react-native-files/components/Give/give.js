@@ -85,6 +85,15 @@ render() {
               
             </ScrollView>
 
+            <View style={styles.containerbutton2}> 
+                <TouchableOpacity style={styles.button2} 
+                        onPress={() => this.props.navigation.navigate('Review')}>
+                    <Text style={styles.send}>
+                        send
+                    </Text>
+                </TouchableOpacity>
+            </View>
+
 
 
         </View>
@@ -137,7 +146,7 @@ const styles = StyleSheet.create({
         fontSize: 12,
         letterSpacing: 1.5, 
         left: 32,
-        top: 44,
+        top: 35,
     },
 
     inputBoxsitu: {
@@ -149,7 +158,7 @@ const styles = StyleSheet.create({
         borderWidth: 0.5,
         borderColor: '#CACACA',
         left: 32,
-        top: 55,
+        top: 45,
         paddingLeft: 10,
         paddingRight: 10,
         fontFamily: 'Avenir Next',
@@ -160,7 +169,7 @@ const styles = StyleSheet.create({
         fontSize: 12,
         letterSpacing: 1.5, 
         left: 32,
-        top: 95,
+        top: 65,
     },
 
     inputBoxactio: {
@@ -172,7 +181,7 @@ const styles = StyleSheet.create({
         borderWidth: 0.5,
         borderColor: '#CACACA',
         left: 32,
-        top: 110,
+        top: 75,
         padding: 10,
         fontFamily: 'Avenir Next',
     },
@@ -182,7 +191,7 @@ const styles = StyleSheet.create({
         fontSize: 12,
         letterSpacing: 1.5, 
         left: 32,
-        top: 140,
+        top: 95,
     },
 
     inputBoxImpact: {
@@ -194,7 +203,7 @@ const styles = StyleSheet.create({
         borderWidth: 0.5,
         borderColor: '#CACACA',
         left: 32,
-        top: 155,
+        top: 105,
         padding: 10,
         paddingRight: 10,
         fontFamily: 'Avenir Next',
@@ -234,7 +243,7 @@ const styles = StyleSheet.create({
         borderColor: '#007AFF',
         fontWeight: '600',
         left: 32,
-        top: 110,
+        top: 75,
         padding: 10,
         fontFamily: 'Avenir Next',
         shadowColor: '#DADADA',
@@ -255,7 +264,7 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor: '#007AFF',
         left: 32,
-        top: 55,
+        top: 45,
         padding: 10,
         fontWeight: '600',
         fontFamily: 'Avenir Next',
@@ -276,7 +285,7 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor: '#007AFF',
         left: 32,
-        top: 155,
+        top: 105,
         padding: 10,
         fontWeight: '600',
         fontFamily: 'Avenir Next',
@@ -287,6 +296,31 @@ const styles = StyleSheet.create({
         },
         shadowRadius: 5,
         shadowOpacity: 1.0,
+    },
+
+    containerbutton2: {
+        flex: 0.2,
+        backgroundColor: 'white',
+    },
+
+    send: {
+        fontFamily: 'Avenir Next',
+        fontSize: 17,
+        fontWeight: '600',
+        textAlign: 'center',
+        color: 'white',
+        top: 10,
+    },
+
+    button2: {
+        width: 290,
+        height: 44,
+        top: 10,
+        left: 29,
+        borderWidth: 0.5,
+        borderRadius: 5,
+        backgroundColor: '#F2994A',
+        borderColor: '#F2994A',
     },
 
 

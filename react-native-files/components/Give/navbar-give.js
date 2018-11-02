@@ -25,18 +25,18 @@ render() {
             </Text>
             
             <View >
-                <TouchableOpacity >
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('Settings')}>
                     <Image style={styles.dots} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native-files/assets/dots3.png")}/>
                 </TouchableOpacity>
             </View>
         
             <View >
-                <TouchableOpacity >
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('Inbox')}>
                     <Image style={styles.basket} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native-files/assets/inbox-image.png")}/>
                 </TouchableOpacity>
             </View>
             <View >
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('Give')}>
                     <Image style={styles.crossButton} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native-files/assets/Button-Navbar.png")}/>
                 </TouchableOpacity>
             </View>

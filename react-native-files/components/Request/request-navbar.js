@@ -25,7 +25,7 @@ render() {
             </Text>
 
             <View style={styles.buttonGive}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('Give')}>
                     <Text style={styles.tGive}>Give</Text>
                 </TouchableOpacity>
             </View>

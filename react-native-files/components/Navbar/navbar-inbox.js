@@ -31,12 +31,12 @@ render() {
             </View>
         
             <View >
-                <TouchableOpacity onPress={() => this.props.navigation.navigate('Inbox')}>
+                <TouchableOpacity>
                     <Image style={styles.basket} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native-files/assets/inbox-image.png")}/>
                 </TouchableOpacity>
             </View>
             <View >
-                <TouchableOpacity onPress={() => this.props.navigation.push('Give')}>
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('Give')}>
                     <Image style={styles.crossButton} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native-files/assets/Button-Navbar.png")}/>
                 </TouchableOpacity>
             </View>

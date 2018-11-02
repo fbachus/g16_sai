@@ -56,6 +56,14 @@ render() {
               
             </ScrollView>
 
+            <View style={styles.containerbutton2}> 
+                <TouchableOpacity style={styles.button2} 
+                        onPress={() => this.props.navigation.navigate('Review')}>
+                    <Text style={styles.send}>
+                        send
+                    </Text>
+                </TouchableOpacity>
+            </View>
 
 
         </View>
@@ -166,6 +174,31 @@ const styles = StyleSheet.create({
         },
         shadowRadius: 5,
         shadowOpacity: 1.0,
+    },
+
+    containerbutton2: {
+        flex: 0.2,
+        backgroundColor: 'white',
+    },
+
+    send: {
+        fontFamily: 'Avenir Next',
+        fontSize: 17,
+        fontWeight: '600',
+        textAlign: 'center',
+        color: 'white',
+        top: 10,
+    },
+
+    button2: {
+        width: 290,
+        height: 44,
+        top: 10,
+        left: 29,
+        borderWidth: 0.5,
+        borderRadius: 5,
+        backgroundColor: '#F2994A',
+        borderColor: '#F2994A',
     },
 
 

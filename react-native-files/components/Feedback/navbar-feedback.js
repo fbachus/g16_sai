@@ -24,7 +24,7 @@ export default class Navbarfeedback extends React.Component {
             </Text>
 
             <View >
-                <TouchableOpacity >
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('Settings')} >
                     <Image style={styles.dots} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native-files/assets/dots3.png")}/>
                 </TouchableOpacity>
             </View>
@@ -35,7 +35,7 @@ export default class Navbarfeedback extends React.Component {
                 </TouchableOpacity>
             </View>
             <View >
-                <TouchableOpacity >
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('Give')}>
                     <Image style={styles.crossButton} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native-files/assets/Button-Navbar.png")}/>
                 </TouchableOpacity>
             </View>

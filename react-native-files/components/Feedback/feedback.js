@@ -58,7 +58,8 @@ render() {
        </View>
             </ScrollView>
 
-            <TouchableOpacity style={styles.tuContainer}>
+            <TouchableOpacity style={styles.tuContainer} 
+            onPress={() => this.props.navigation.navigate('Review')}>
                 <Text style={styles.tuText}>
                     thank you
                 </Text>

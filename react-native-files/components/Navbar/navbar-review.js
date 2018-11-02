@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     },
     
     reviewText:{
-        fontFamily: "Avenir Next",
+        fontFamily: "Avenir Next ",
         fontSize: 24,
         left: 32,
         top: 25
