@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { AppRegistry, StyleSheet, Text, Image, View } from 'react-native';
+import { AppRegistry, StyleSheet, Text, Image, View, Button } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 
 import Welcome from './components/Welcome/welcome.js';
@@ -30,12 +30,12 @@ const RootStack = createStackNavigator(
     Login: Login,
     Give: Give,
     Request: Request, 
-    Settings: Settings,   
+    Settings: Settings,
     
   },
 
   {
-    initialRouteName: 'Request',
+    initialRouteName: 'Give',
   }
 );
 
@@ -46,6 +46,6 @@ export default class App extends React.Component {
 }
 
 
-/*AppRegistry.registerComponent('App', () => App)*/
+AppRegistry.registerComponent('App', () => App)
 
 

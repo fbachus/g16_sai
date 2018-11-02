@@ -7,6 +7,9 @@ export default class Navbarreview extends React.Component {
     static navigationOptions = {
         header: null
     }
+    constructor(props){
+        super(props)
+    }
 
     onPress = () => {
         Alert.alert('Hallo')
@@ -23,7 +26,7 @@ export default class Navbarreview extends React.Component {
             </Text>
 
             <View >
-                <TouchableOpacity >
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('Settings')}>
                     <Image style={styles.dots} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native-files/assets/dots3.png")}/>
                 </TouchableOpacity>
             </View>
@@ -34,7 +37,7 @@ export default class Navbarreview extends React.Component {
                 </TouchableOpacity>
             </View>
             <View >
-                <TouchableOpacity >
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('Give')}>
                     <Image style={styles.crossButton} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native-files/assets/Button-Navbar.png")}/>
                 </TouchableOpacity>
             </View>
