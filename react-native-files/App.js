@@ -13,7 +13,8 @@ import SignUpName from './components/LogSign-In/signin-name';
 import Login from './components/LogSign-In/login';
 import Give from './components/Give/give';
 import Request from './components/Request/request';
-import Settings from './components/Settings/settings'
+import Settings from './components/Settings/settings';
+import API from './components/api'
 
 
 const RootStack = createStackNavigator(
@@ -31,11 +32,12 @@ const RootStack = createStackNavigator(
     Give: Give,
     Request: Request, 
     Settings: Settings,
+    API: API,
     
   },
 
   {
-    initialRouteName: 'Give',
+    initialRouteName: 'Request',
   }
 );
 
