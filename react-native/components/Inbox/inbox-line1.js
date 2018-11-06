@@ -21,7 +21,7 @@ render() {
             <View style={styles.row}>
                 <Image
                 style={styles.bluedot}
-                source={require("/Users/christopherroskes/Desktop/NativeCode/RNJS/assets/blue-dot.png")}/>
+                source={require("/Users/christopherroskes/Desktop/g16_sai/react-native/assets/blue-dot.png")}/>
                 
                 <Text style={styles.name}>
                     Name (Reuest to Backend) 
@@ -29,7 +29,7 @@ render() {
 
                 <Image
                 style={styles.greyarrow}
-                source={require("/Users/christopherroskes/Desktop/NativeCode/RNJS/assets/greyarrow-read.png")}/>
+                source={require("/Users/christopherroskes/Desktop/g16_sai/react-native/assets/greyarrow-read.png")}/>
 
                 </View>
             </ScrollView>

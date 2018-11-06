@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, Image, View , ScrollView, TouchableOpacity , Alert, TextInput} from 'react-native';
-import Navbarrequest from './request-navbar';
 
 
-import { createStackNavigator } from 'react-navigation';
 
 
 export default class Give extends React.Component {
@@ -30,7 +28,7 @@ render() {
             <View style={styles.containerNavbar}>
 
                 <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
-                    <Image style={styles.arrow}  source={require("/Users/christopherroskes/Desktop/NativeCode/RNJS/assets/back-arrow.png")}/>
+                    <Image style={styles.arrow}  source={require("/Users/christopherroskes/Desktop/g16_sai/react-native/assets/back-arrow.png")}/>
                 </TouchableOpacity>
 
                 <Text style={styles.reviewText}> 

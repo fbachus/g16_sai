@@ -5,7 +5,6 @@ import { createStackNavigator } from 'react-navigation';
 
 import Welcome from './components/Welcome/welcome.js';
 import Inbox from './components/Inbox/inbox.js';
-import Review from  './components/Review/review.js';
 import Feedback from './components/Feedback/feedback.js';
 import SignLogInMenu from './components/LogSign-In/menu-signlog-in';
 import SignUpEmail from './components/LogSign-In/signin-email';
@@ -27,7 +26,6 @@ const RootStack = createStackNavigator(
   {
 
     Welcome: Welcome,
-    Review: Review,
     Inbox: Inbox,
     Feedback: Feedback,
     SignLogInMenu: SignLogInMenu,
@@ -45,7 +43,7 @@ const RootStack = createStackNavigator(
   },
 
   {
-    initialRouteName: 'Welcome',
+    initialRouteName: 'Review1',
   }
 );
 

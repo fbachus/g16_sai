@@ -30,20 +30,23 @@ render() {
                 Giving and receiving feedback with everyone around you, the right way.
                 </Text>
             </View>
+            
 
             <View style={styles.images}>
                 <View>
-                    <Image style={styles.image1} source={require("/Users/christopherroskes/Desktop/NativeCode/RNJS/assets/Welcome1.png")}/>
+                    <Image style={styles.image1} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native/assets/Welcome1.png")}/>
                 </View>
 
                 <View>
-                     <Image style={styles.image2} source={require("/Users/christopherroskes/Desktop/NativeCode/RNJS/assets/Welcome2.png")}/>
+                     <Image style={styles.image2} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native/assets/Welcome2.png")}/>
                 </View>
 
                 <View>
-                     <Image style={styles.image3} source={require("/Users/christopherroskes/Desktop/NativeCode/RNJS/assets/Welocome3.png")}/> 
+                     <Image style={styles.image3} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native/assets/Welocome3.png")}/> 
                 </View>
             </View>
+            
+           
 
             <TouchableOpacity style={styles.continueContainer} onPress={() => this.props.navigation.navigate('SignLogInMenu')}>
                 <Text style={styles.continue}>
@@ -141,3 +144,6 @@ const styles = StyleSheet.create({
    
 
 });
+
+
+
