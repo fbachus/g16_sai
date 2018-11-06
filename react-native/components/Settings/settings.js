@@ -20,7 +20,7 @@ render() {
         <View style={styles.overall}>
 
         <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
-            <Image style={styles.back} source={require("/Users/christopherroskes/Desktop/NativeCode/RNJS/assets/back-arrow.png")}/> 
+            <Image style={styles.back} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native/assets/back-arrow.png")}/> 
         </TouchableOpacity>
 
             <View style={styles.containerSettings}>
@@ -29,7 +29,7 @@ render() {
                         <Text style={styles.textSettings}>
                             Settings
                         </Text>
-                        <Image style={styles.settingsPic} source={require("/Users/christopherroskes/Desktop/NativeCode/RNJS/assets/settings-img.png")}/> 
+                        <Image style={styles.settingsPic} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native/assets/settings-img.png")}/> 
                 </View>
 
             </View>
@@ -40,7 +40,7 @@ render() {
                     <Text style={styles.textProfile}>
                         Profile
                     </Text>
-                    <Image style={styles.profilePic} source={require("/Users/christopherroskes/Desktop/NativeCode/RNJS/assets/profile-img.png")}/> 
+                    <Image style={styles.profilePic} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native/assets/profile-img.png")}/> 
                 </View>
 
             </View>

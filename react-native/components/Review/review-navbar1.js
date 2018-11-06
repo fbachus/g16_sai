@@ -24,15 +24,15 @@ render() {
                 </Text>    
 
                 <TouchableOpacity style={styles.frame1} onPress={() => this.props.navigation.navigate('Settings')}>
-                    <Image style={styles.punkte}  source={require("/Users/christopherroskes/Desktop/NativeCode/RNJS/assets/dots3.png")}/>    
+                    <Image style={styles.punkte}  source={require("/Users/christopherroskes/Desktop/g16_sai/react-native/assets/dots3.png")}/>    
                 </TouchableOpacity>   
 
                 <TouchableOpacity style={styles.frame2} onPress={() => this.props.navigation.navigate('Inbox')}>
-                    <Image style={styles.inbox} source={require("/Users/christopherroskes/Desktop/NativeCode/RNJS/assets/inbox-image.png")}/>    
+                    <Image style={styles.inbox} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native/assets/inbox-image.png")}/>    
                 </TouchableOpacity> 
 
                 <TouchableOpacity style={styles.frame3} onPress={() => this.props.navigation.navigate('Give')} >
-                    <Image style={styles.cross} source={require("/Users/christopherroskes/Desktop/NativeCode/RNJS/assets/Button-Navbar.png")}/>    
+                    <Image style={styles.cross} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native/assets/Button-Navbar.png")}/>    
                 </TouchableOpacity>              
         </View>
 
@@ -82,14 +82,14 @@ render() {
                     onPress={() => {
                     Alert.alert('Thank you! We will check it again.');
                         }}>
-                        <Image style={styles.curious} source={require("/Users/christopherroskes/Desktop/NativeCode/RNJS/assets/Curious-Emojie.png")}/>
+                        <Image style={styles.curious} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native/assets/Curious-Emojie.png")}/>
                 </TouchableOpacity>
 
                 <TouchableOpacity 
                     onPress={() => {
                         Alert.alert('Thanks for your help!                   The feedback is on its way...');
                         }}>
-                        <Image style={styles.tutobene} source={require("/Users/christopherroskes/Desktop/NativeCode/RNJS/assets/TutoBene-Emojie.png")}/>
+                        <Image style={styles.tutobene} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native/assets/TutoBene-Emojie.png")}/>
                 </TouchableOpacity>
 
                 

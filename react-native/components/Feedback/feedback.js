@@ -21,7 +21,7 @@ render() {
 
             <TouchableOpacity 
             onPress={() => this.props.navigation.goBack()}>
-                <Image style={styles.backarrow} source={require("/Users/christopherroskes/Desktop/NativeCode/RNJS/assets/back-arrow.png")}/>
+                <Image style={styles.backarrow} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native/assets/back-arrow.png")}/>
             </TouchableOpacity>
 
             <Text style={styles.feedbackText}>
@@ -30,18 +30,18 @@ render() {
 
             <View >
                 <TouchableOpacity onPress={() => this.props.navigation.navigate('Settings')} >
-                    <Image style={styles.dots} source={require("/Users/christopherroskes/Desktop/NativeCode/RNJS/assets/dots3.png")}/>
+                    <Image style={styles.dots} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native/assets/dots3.png")}/>
                 </TouchableOpacity>
             </View>
 
             <View >
                 <TouchableOpacity onPress={() => this.props.navigation.navigate('Inbox')} >
-                    <Image  style={styles.basket} source={require("/Users/christopherroskes/Desktop/NativeCode/RNJS/assets/inbox-image.png")}/>
+                    <Image  style={styles.basket} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native/assets/inbox-image.png")}/>
                 </TouchableOpacity>
             </View>
             <View >
                 <TouchableOpacity onPress={() => this.props.navigation.navigate('Give')}>
-                    <Image style={styles.crossButton} source={require("/Users/christopherroskes/Desktop/NativeCode/RNJS/assets/Button-Navbar.png")}/>
+                    <Image style={styles.crossButton} source={require("/Users/christopherroskes/Desktop/g16_sai/react-native/assets/Button-Navbar.png")}/>
                 </TouchableOpacity>
             </View>
         </View>
