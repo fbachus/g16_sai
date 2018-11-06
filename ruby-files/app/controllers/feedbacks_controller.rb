@@ -1,3 +1,7 @@
+#!/usr/bin/ruby
+
+require 'sqlite3'
+
 class FeedbacksController < ApplicationController
   before_action :set_feedback, only: [:show, :edit, :update, :destroy]
 
@@ -37,8 +41,12 @@ class FeedbacksController < ApplicationController
     end
   end
 
+  def read
+
+    db = SQLite::Database.new "feedbacks.sqlite3"
   # PATCH/PUT /feedbacks/1
   # PATCH/PUT /feedbacks/1.json
+end
   def update
     respond_to do |format|
       if @feedback.update(feedback_params)
